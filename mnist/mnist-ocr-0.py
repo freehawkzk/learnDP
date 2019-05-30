@@ -1,3 +1,5 @@
+# just for fun.
+# by zhouke
 # 导入tensorflow
 import tensorflow as tf
 # 导入mnist数据集
@@ -6,13 +8,13 @@ from tensorflow.examples.tutorials.mnist import input_data
 # 加载数据集，如果本地不存在数据的话，会自动联网下载数据集
 mnist = input_data.read_data_sets("./mnist_data/",one_hot=True)
 
-# 训练集样本数目
+# 训练集样本数目,55000
 print("Training data size:%d " %(mnist.train.num_examples))
 
-# 验证集样本数目
+# 验证集样本数目,5000
 print("Validating data size:%d " %(mnist.validation.num_examples))
 
-# 测试集样本数目
+# 测试集样本数目,10000
 print("Testing data size:%d " %(mnist.test.num_examples))
 
 # 输出第一个训练样本
