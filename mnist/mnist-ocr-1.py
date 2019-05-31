@@ -1,6 +1,7 @@
 # just for fun.
 # by zhouke
 # 导入tensorflow
+import os
 import tensorflow as tf
 # 导入mnist数据集
 from tensorflow.examples.tutorials.mnist import input_data
@@ -83,7 +84,8 @@ def train(mnist):
             "model is %g"%(TRAINING_STEPS,test_acc))
 
 def main(argv=None):
-    mnist = input_data.read_data_sets("./mnist_data/",one_hot=True)
+    mnistpath = os.path.split(os.path.realpath(__file__))[0] + '/mnist_data/'
+    mnist = input_data.read_data_sets(mnistpath,one_hot=True)
     train(mnist)
 
 if __name__ == '__main__':
