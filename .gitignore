@@ -103,3 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 .vs/
+cifar10_data/cifar-100-python.tar.gz
+cifar10_data/cifar-100-binary.tar.gz
+cifar10_data/cifar-10-python.tar.gz
+cifar10_data/cifar-10-binary.tar.gz
